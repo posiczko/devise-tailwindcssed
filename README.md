@@ -1,3 +1,18 @@
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+- [Devise Tailwindcssed](#devise-tailwindcssed)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Development](#development)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Code of Conduct](#code-of-conduct)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 # Devise Tailwindcssed
 
 This gem tries to give you a nicer place to start with your views for your Devise model 
