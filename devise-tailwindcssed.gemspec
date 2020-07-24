@@ -44,23 +44,23 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   spec.required_ruby_version = "~> 2.6"
-  spec.add_development_dependency "bundler", "~> 2.0.1"
-  spec.add_development_dependency "bundler-audit", "~> 0.6"
-  spec.add_development_dependency "gemsmith", "~> 13.4"
-  spec.add_development_dependency "git-cop", "~> 3.0"
+  spec.add_development_dependency "bundler", "~> 2.1.4"
+  spec.add_development_dependency "bundler-audit", "~> 0.7"
+  spec.add_development_dependency "gemsmith", "~> 14.4"
+  spec.add_development_dependency "git-lint", "~> 1.0"
   spec.add_development_dependency "guard-rspec", "~> 4.7"
   spec.add_development_dependency "guard-rubocop", "~> 1.3"
   spec.add_development_dependency "pry", "~> 0.10"
   spec.add_development_dependency "pry-byebug", "~> 3.5"
-  spec.add_development_dependency "rake", "~> 12.3"
-  spec.add_development_dependency "reek", "~> 5.0"
-  spec.add_development_dependency "rspec", "~> 3.8"
+  spec.add_development_dependency "rake", "~> 13.0.1"
+  spec.add_development_dependency "reek", "~> 6.0"
+  spec.add_development_dependency "rspec", "~> 3.9"
   spec.add_development_dependency "rubocop", "~> 0.67"
   spec.add_development_dependency "rubocop-performance", "~> 1.1"
   spec.add_development_dependency "rubocop-rspec", "~> 1.30"
 
-  spec.add_dependency "rails", "~> 5.2.3", "<= 6.0"
-  spec.add_runtime_dependency "railties", "> 4.0", "< 6.0"
+  spec.add_dependency "rails", ">= 5.2.3.4", "< 6.1"
+  spec.add_runtime_dependency "railties", "> 4.0", "< 6.1"
 
   spec.extra_rdoc_files = Dir["README*", "LICENSE*"]
   spec.require_paths = ["lib"]
