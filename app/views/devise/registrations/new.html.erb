@@ -22,7 +22,7 @@
         <div class="mb-4">
             <%= f.label :password, class: "block font-bold mb-2 text-gray-700 text-sm" %>
             <% if @minimum_password_length %>
-                <small><em class="text-gray-600">(<%= @minimum_password_length %> charactersa minimum)</em></small>
+                <small><em class="text-gray-600">(<%= @minimum_password_length %> characters minimum)</em></small>
             <% end %>
             <%= f.password_field :password,
                                  autocomplete: "new-password",
