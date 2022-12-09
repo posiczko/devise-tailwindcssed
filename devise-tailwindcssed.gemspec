@@ -26,11 +26,14 @@ Gem::Specification.new do |spec|
 
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github.com/posiczko/devise-tailwindcssed"
-    # spec.metadata["changelog_uri"] = "https://raw.githubusercontent.com/posiczko/devise-tailwindcssed/Chane"
+    spec.metadata["rubygems_mfa_required"] = "true"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
   end
+
+  spec.signing_key = Gem.default_key_path
+  spec.cert_chain = [Gem.default_cert_path]
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added
@@ -44,20 +47,6 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   spec.required_ruby_version = ">= 2.6", "< 3.2"
-  spec.add_development_dependency "bundler", "~> 2.1.4"
-  spec.add_development_dependency "bundler-audit", "~> 0.7"
-  spec.add_development_dependency "gemsmith", "~> 14.4"
-  spec.add_development_dependency "git-lint", "~> 1.0"
-  spec.add_development_dependency "guard-rspec", "~> 4.7"
-  spec.add_development_dependency "guard-rubocop", "~> 1.3"
-  spec.add_development_dependency "pry", "~> 0.10"
-  spec.add_development_dependency "pry-byebug", "~> 3.5"
-  spec.add_development_dependency "rake", "~> 13.0.1"
-  spec.add_development_dependency "reek", "~> 6.0"
-  spec.add_development_dependency "rspec", "~> 3.9"
-  spec.add_development_dependency "rubocop", "~> 0.67"
-  spec.add_development_dependency "rubocop-performance", "~> 1.1"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.30"
 
   spec.add_dependency "rails", ">= 5.2.3.4", "< 7.1"
   spec.add_runtime_dependency "railties", "> 4.0", "< 7.1"
