@@ -14,8 +14,8 @@ begin
   Reek::Rake::Task.new
   RSpec::Core::RakeTask.new
   RuboCop::RakeTask.new
-rescue LoadError => e
-  puts e.message
+rescue LoadError => error
+  puts error.message
 end
 
 desc "Run code quality checks"

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "rails/engine"
-require "devise/tailwindcssed/version"
 require "devise/generators/tailwindcssed_generator"
+require "devise/tailwindcssed/version"
+require "rails/engine"
 
 module Devise
   module Tailwindcssed
