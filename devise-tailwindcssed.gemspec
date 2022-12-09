@@ -43,7 +43,7 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
-  spec.required_ruby_version = "~> 2.6"
+  spec.required_ruby_version = ">= 2.6", "< 3.2"
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "bundler-audit", "~> 0.7"
   spec.add_development_dependency "gemsmith", "~> 14.4"
@@ -59,8 +59,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-performance", "~> 1.1"
   spec.add_development_dependency "rubocop-rspec", "~> 1.30"
 
-  spec.add_dependency "rails", ">= 5.2.3.4", "< 6.1"
-  spec.add_runtime_dependency "railties", "> 4.0", "< 6.1"
+  spec.add_dependency "rails", ">= 5.2.3.4", "< 7.1"
+  spec.add_runtime_dependency "railties", "> 4.0", "< 7.1"
 
   spec.extra_rdoc_files = Dir["README*", "LICENSE*"]
   spec.require_paths = ["lib"]
