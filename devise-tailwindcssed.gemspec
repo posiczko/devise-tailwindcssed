@@ -44,10 +44,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r(^exe/)) { |f| File.basename(f) }
 
   # Resolve conflict between the gemspec's required_ruby_version and rubocop's TargetRubyVersion
-  # rubocop:disable  Gemspec/RequiredRubyVersion
-  spec.required_ruby_version = ">= 2.6", "< 3.2"
-  # rubocop:enable  Gemspec/RequiredRubyVersion
-
+  spec.required_ruby_version = ">= 2.6"
   spec.add_dependency "rails", ">= 5.2.3.4", "< 7.1"
   spec.add_runtime_dependency "railties", "> 4.0", "< 7.1"
 

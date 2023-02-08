@@ -1,2 +1,5 @@
 inherit_gem:
   caliber: config/all.yml
+
+AllCops:
+  NewCops: enable
