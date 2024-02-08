@@ -45,7 +45,7 @@ Gem::Specification.new do |spec|
 
   # Resolve conflict between the gemspec's required_ruby_version and rubocop's TargetRubyVersion
   # rubocop:disable  Gemspec/RequiredRubyVersion
-  spec.required_ruby_version = ">= 2.6", "< 3.2"
+  spec.required_ruby_version = ">= 2.6", "<= 3.3"
   # rubocop:enable  Gemspec/RequiredRubyVersion
 
   spec.add_dependency "rails", ">= 5.2.3.4", "< 7.1"
