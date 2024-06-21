@@ -46,11 +46,11 @@ gem 'devise-tailwindcssed'
 
 And then execute:
 
-    $ bundle
+    bundle
 
 Or install it yourself as:
 
-    $ gem install devise-tailwindcssed
+    gem install devise-tailwindcssed
 
 ## Usage
 
